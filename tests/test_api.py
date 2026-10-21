@@ -1,20 +1,7 @@
-"""
-Automated API Test Suite for Iris Classification API.
-
-Tests cover:
-- Root endpoint navigation and status
-- Health check and model readiness verification
-- Model metadata inspection
-- Model inference with valid payload and response structure validation
-- Input validation rejection on negative measurements (HTTP 422)
-- Input validation rejection on missing required fields (HTTP 422)
-"""
-
 import pytest
 from fastapi.testclient import TestClient
 
 from main import app
-
 
 @pytest.fixture(scope="module")
 def client():
