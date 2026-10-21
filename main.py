@@ -1,10 +1,3 @@
-"""
-FastAPI Application for Iris Flower Species Classification.
-
-This module exposes a RESTful API to serve predictions from a pre-trained
-Random Forest model bundle (serialized via Joblib).
-"""
-
 from contextlib import asynccontextmanager
 from pathlib import Path
 from typing import Any, Dict
