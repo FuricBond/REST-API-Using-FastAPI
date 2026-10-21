@@ -7,17 +7,6 @@ from sklearn.model_selection import train_test_split
 
 
 def train() -> Path:
-    """
-    Executes the training workflow:
-    1. Loads dataset and extracts features/labels.
-    2. Performs stratified train-test split.
-    3. Fits a RandomForestClassifier.
-    4. Evaluates accuracy on the held-out test split.
-    5. Saves the model bundle to the artifacts directory.
-
-    Returns:
-        Path: The absolute path to the saved model artifact.
-    """
     # 1. Load the Iris dataset
     iris = load_iris()
 
